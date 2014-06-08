@@ -18,6 +18,7 @@ html {
 
 body {
   padding-top: 60px;
+  font-family: "Gotham Narrow SSm",sans-serif,Arial;
 }
 
 section {
@@ -141,6 +142,36 @@ aside {
   }
 }
 
+.stats {
+  overflow: auto;
+  position: relative;
+  width:100%;
+  a {
+    float: left;
+    color: gray;
+    width: 33%;
+    &:first-child {
+      padding-left: 0;
+      border: 0;
+    }
+    &:hover {
+      text-decoration: none;
+      color: $blue;
+    }
+  }
+  strong {
+    display: block;
+  }
+}
+
+.user_avatars {
+  overflow: auto;
+  margin-top: 10px;
+  .gravatar {
+    margin: 1px 1px;
+  }
+}
+
 .gravatar {
   float: left;
   margin-right: 10px;
@@ -198,19 +229,47 @@ input {
     border-top: 1px solid #e8e8e8;
   }
 }
+
 .content {
   display: block;
 }
+
 .timestamp {
   color: $grayLight;
 }
+
 .gravatar {
   float: left;
   margin-right: 10px;
 }
+
 aside {
   textarea {
     height: 100px;
     margin-bottom: 5px;
+    resize: none;
+  }
+}
+
+.post-button {
+  float: right;
+  .post-counter {
+    margin-right:5px;
+    // top:10px;
+    color: $grayLight;
+    display: inline-block;
+    width: 35px;
+    border: 0;
+    padding: 0 3px;
+    position: relative;
+    vertical-align: top;
+    top: 13px;
+    text-align: right;
+    font-size: 16px;
+    text-shadow: 0 1px 1px rgba(255,255,255,.75);
+  }
+  .post-btn {
+    display: inline-block;
+    text-align: center;
   }
 }

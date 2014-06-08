@@ -3,6 +3,8 @@
   <div class="field">
     <%= f.text_area :content, placeholder: "Compose new micropost...", :maxlength => 140 %>
   </div>
-  <span class="countdown"></span>
-  <%= f.submit "Post", class: "btn btn-large btn-primary" %>
+  <div class="post-button">
+    <span class="post-counter"></span>
+    <%= f.submit "Post", class: "btn btn-large btn-primary post-btn" %>
+  </div>
 <% end %>
